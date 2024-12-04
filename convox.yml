@@ -1,0 +1,10 @@
+environment:
+  - PORT=80
+  - NODE_ENV=production
+  - GATSBY_API_URL=https://api.example.com
+
+services:
+  web:
+    domain: ${HOST}
+    build: .
+    port: 80
